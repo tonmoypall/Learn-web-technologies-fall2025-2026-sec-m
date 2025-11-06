@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Person Profile</title>
+</head>
+<body>
+    <table width="100%" height="100%">
+        <tr>
+            <td align="center" valign="middle">
+                <fieldset style="width:400px;">
+                    <legend><h2>PERSON PROFILE</h2></legend>
+                    <form>
+                        <table border="1" cellpadding="8" cellspacing="0" align="center">
+                            <tr>
+                                <td>Name</td>
+                                <td><input type="text" name="name"></td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td><input type="email" name="email"></td>
+                            </tr>
+                            <tr>
+                                <td>Gender</td>
+                                <td>
+                                    <input type="radio" name="gender" value="male">Male
+                                    <input type="radio" name="gender" value="female">Female
+                                    <input type="radio" name="gender" value="other">Other
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Date of Birth</td>
+                                <td>
+                                    <input type="text" size="2" maxlength="2" placeholder="dd"> /
+                                    <input type="text" size="2" maxlength="2" placeholder="mm"> /
+                                    <input type="text" size="4" maxlength="4" placeholder="yyyy">
+                                    (dd/mm/yyyy)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Blood Group</td>
+                                <td>
+                                    <select name="bloodgroup">
+                                        <option value="A+">A+</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B-">B-</option>
+                                        <option value="AB+">AB+</option>
+                                        <option value="AB-">AB-</option>
+                                        <option value="O+">O+</option>
+                                        <option value="O-">O-</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Degree</td>
+                                <td>
+                                    <input type="checkbox" name="degree" value="SSC">SSC
+                                    <input type="checkbox" name="degree" value="HSC">HSC
+                                    <input type="checkbox" name="degree" value="BSc">BSc.
+                                    <input type="checkbox" name="degree" value="MSc">MSc.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Photo</td>
+                                <td><input type="file" name="photo"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="center">
+                                    <input type="submit" value="Submit">
+                                    <input type="reset" value="Reset">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </fieldset>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
