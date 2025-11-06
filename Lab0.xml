@@ -1,0 +1,95 @@
+<products>
+    <product sl="1">
+        <id>11</id>
+        <name>Samsung</name>
+        <unit_price>35000</unit_price>
+        <stock>50</stock>
+        <status>1</status>
+    </product>
+
+    <product sl="2">
+        <id>20</id>
+        <name>HTC</name>
+        <unit_price>65300</unit_price>
+        <stock>35</stock>
+        <status>0</status>
+    </product>
+
+    <product sl="3">
+        <id>23</id>
+        <name>Nokia</name>
+        <unit_price>25100</unit_price>
+        <stock>100</stock>
+        <status>1</status>
+    </product>
+</products>
+
+<admissions>
+    <student sl="1">
+        <slno>23</slno>
+        <name>John Carter</name>
+        <admission_date>
+            <day>25</day>
+            <month>12</month>
+            <year>2015</year>
+        </admission_date>
+    </student>
+
+    <student sl="2">
+        <slno>29</slno>
+        <name>Bob Marshal</name>
+        <admission_date>
+            <day>13</day>
+            <month>01</month>
+            <year>1999</year>
+        </admission_date>
+    </student>
+
+    <student sl="3">
+        <slno>35</slno>
+        <name>Clark Kent</name>
+        <admission_date>
+            <day>17</day>
+            <month>06</month>
+            <year>2005</year>
+        </admission_date>
+    </student>
+</admissions>
+
+<employees>
+    <employee sl="1">
+        <id>1</id>
+        <name>John Doe</name>
+        <address>
+            <house>38</house>
+            <road>3</road>
+            <area>Banani, Dhaka</area>
+        </address>
+        <department>Sales</department>
+        <salary>$20000</salary>
+    </employee>
+
+    <employee sl="2">
+        <id>2</id>
+        <name>Mark Zuckerberg</name>
+        <address>
+            <house>20</house>
+            <road>18</road>
+            <area>Mirpur, Dhaka</area>
+        </address>
+        <department>Accounts</department>
+        <salary>$12000</salary>
+    </employee>
+
+    <employee sl="3">
+        <id>3</id>
+        <name>Ala Voski</name>
+        <address>
+            <house>38</house>
+            <road>3</road>
+            <area>Motijheel, Dhaka</area>
+        </address>
+        <department>Human Resource</department>
+        <salary>$30000</salary>
+    </employee>
+</employees>
