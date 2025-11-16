@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOB Validation</title>
+</head>
+<body>
+
+<h3>Date of Birth</h3>
+
+<div>
+    <div>dd / mm / yyyy</div>
+    <input type="text" id="dd" size="3">
+    <div style="display:inline-block;"></div>
+    <input type="text" id="mm" size="3">
+    <div style="display:inline-block;"></div>
+    <input type="text" id="yy" size="6">
+</div>
+
+<br><br>
+
+<button onclick="validateDOB()">Submit</button>
+
+<p id="result"></p>
+
+<script>
+function validateDOB() {
+    let d = document.getElementById("dd").value.trim();
+    let m = document.getElementById("mm").value.trim();
+    let y = document.getElementById("yy").value.trim();
+    let result = document.getElementById("result");
+
+    if (d === "" || m === "" || y === "") {
+        result.innerHTML = "Fields cannot be empty";
+        return;
+    }
+
+    let dd = Number(d);
+    let mm = Number(m);
+    let yy = Number(y);
+
+    if (isNaN(dd) || isNaN(mm) || isNaN(yy)) {
+        result.innerHTML = "Invalid number";
+        return;
+    }
+
+    if (dd < 1 || dd > 31) {
+        result.innerHTML = "Day must be 1-31";
+        return;
+    }
+
+    if (mm < 1 || mm > 12) {
+        result.innerHTML = "Month must be 1-12";
+        return;
+    }
+
+    if (yy < 1900 || yy > 2016) {
+        result.innerHTML = "Year must be 1900-2016";
+        return;
+    }
+
+    result.innerHTML = "Valid date";
+}
+</script>
+
+</body>
+</html>
